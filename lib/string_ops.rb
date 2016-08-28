@@ -22,6 +22,6 @@ module StringOps
   end
 
   def ensure_ends_with_period(sentence)
-    sentence.end_with?(".") ? sentence : sentence + "."
+    sentence + (sentence.end_with?(".") ? "" : ".")
   end
 end
