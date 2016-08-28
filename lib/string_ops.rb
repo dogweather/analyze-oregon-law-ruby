@@ -21,7 +21,7 @@ module StringOps
       .map { |sentence| ensure_ends_with_period(sentence) }
   end
 
-  def ensure_ends_with_period(s)
-    s.end_with?(".") ? s : s + "."
+  def ensure_ends_with_period(sentence)
+    sentence.end_with?(".") ? sentence : sentence + "."
   end
 end
